@@ -1,5 +1,5 @@
 .site-header {
-  @include bg-image('../../images/wallpaper.jpg');
+  @include bg-image('../images/wallpaper.jpg');
   margin: 0;
   padding: 0;
   margin: 0 auto;
@@ -7,6 +7,6 @@
   padding-bottom: 230px;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../../images/wallpaper@2x.jpg');
+    background-image: url('../images/wallpaper@2x.jpg');
   }
 }
