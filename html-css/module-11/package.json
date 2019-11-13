@@ -49,5 +49,8 @@
     "prettier": "^1.19.1",
     "require-dir": "^1.2.0",
     "usedcss": "^1.0.7"
+  },
+  "dependencies": {
+    "lodash.template": "^4.5.0"
   }
 }
