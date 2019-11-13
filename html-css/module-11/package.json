@@ -9,15 +9,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://kovgreen.github.io/goit-fe-course/module-11",
+  "homepage": "https://kovgreen.github.io/goit-fe-course/html-css/module-11",
   "repository": {
     "type": "git",
-    "url": "git+https://kovgreen.github.io/goit-fe-course/module-11.git"
+    "url": "git+https://kovgreen.github.io/goit-fe-course/html-css/module-11.git"
   },
   "author": "Koval Oleh <kovgreen@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://kovgreen.github.io/goit-fe-course/module-11/issues"
+    "url": "https://kovgreen.github.io/goit-fe-course/html-css/module-11/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.7.0",
