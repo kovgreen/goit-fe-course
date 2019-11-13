@@ -1,0 +1,28 @@
+.banner {
+  @include center-flex('all');
+  margin: 0 auto;
+  width: 820px;
+  flex-wrap: wrap;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 67px;
+  }
+
+  &__title {
+    font-family: $font-title-main;
+    font-size: 72px;
+    color: map-get($colors, secondary-text-color);
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: $font-title-sub;
+    font-size: 150px;
+    color: map-get($colors, secondary-text-color);
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

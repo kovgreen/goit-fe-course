@@ -1,0 +1,8 @@
+.site-features {
+  @extend %list;
+  width: 78px;
+
+  &__link {
+    @extend %link;
+  }
+}

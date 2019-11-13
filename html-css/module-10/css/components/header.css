@@ -1,0 +1,128 @@
+/* HEADER */
+.header {
+  margin-bottom: 40px;
+}
+
+.site-header {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 230px;
+  background-image: url('../../img/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 170px;
+}
+
+.menu-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.site-nav {
+  width: 500px;
+  padding-right: 20px;
+}
+
+.site-nav__item {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.site-nav__link {
+  text-align: center;
+  font-family: 'MontserratR', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.site-nav__link::after {
+  display: inline-block;
+  content: '';
+  width: 62px;
+  height: 3px;
+  background-color: rgb(252, 227, 138);
+  margin: 0 auto;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: rgb(252, 227, 138);
+}
+
+.site-nav__link:hover::after {
+  opacity: 1;
+}
+
+.site-features {
+  width: 78px;
+  text-transform: uppercase;
+}
+
+.banner {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 820px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 67px;
+}
+
+.banner__title {
+  font-family: 'KaushanSR', 'Arial', sans-serif;
+  font-size: 72px;
+  color: #ffffff;
+}
+
+.banner__slogan {
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: 'MontserratB', 'Arial', sans-serif;
+  font-size: 150px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-lean {
+  padding: 10px 0;
+  width: 160px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.button-lean:hover {
+  background: rgb(149, 225, 211);
+}

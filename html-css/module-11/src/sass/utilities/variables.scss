@@ -1,0 +1,27 @@
+// FONTS FAMILY
+$font-text-main: 'RobotoR', sans-serif;
+$font-text-secondary: 'RobotoB', sans-serif;
+$font-text-third: 'MontserratR', sans-serif;
+$font-title-main: 'KaushanSR', sans-serif;
+$font-title-sub: 'MontserratB', sans-serif;
+$font-position: 'RobotoL', sans-serif;
+$font-title-card: 'MontserratR', sans-serif;
+$font-email: 'RobotoL', sans-serif;
+
+// FONTS SIZE
+$primary-fz: 14px;
+
+// LINE-HEIGHT
+$primary-lh: 1.2;
+
+// COLORS
+$colors: (
+  primary-text-color: rgb(153, 153, 153),
+  secondary-text-color: rgb(255, 255, 255),
+  third-text-collor: rgb(51, 51, 51),
+  primary-accent-color: rgb(243, 129, 129),
+  secondary-accent-color: rgb(252, 227, 138),
+  third-accent-color: rgb(149, 225, 211),
+  primary-border-color: rgb(231, 231, 231),
+  primary-ph-form-color: rgb(204, 204, 204),
+);

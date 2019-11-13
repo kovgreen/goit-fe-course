@@ -1,0 +1,12 @@
+.button-subscribe {
+  @extend %button;
+  font-family: $font-title-sub;
+  padding: 10px 0;
+  width: 150px;
+  height: 40px;
+  background: map-get($colors, third-accent-color);
+
+  &:hover {
+    background: map-get($colors, secondary-accent-color);
+  }
+}

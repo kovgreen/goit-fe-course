@@ -1,0 +1,58 @@
+.section {
+  margin-bottom: 90px;
+
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__block-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title--main {
+    font-family: $font-title-main;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__title--sub {
+    margin-bottom: 46px;
+    font-family: $font-title-sub;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__title--sub::after {
+    @include pseudo($display: block);
+    width: 60px;
+    height: 3px;
+    background-color: map-get($colors, primary-accent-color);
+    margin: 0 auto;
+    margin-top: 40px;
+    opacity: 1;
+  }
+
+  &__description {
+    margin: 0 auto;
+    width: 980px;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 15px;
+    font-family: $font-text-main;
+    color: map-get($colors, primary-text-color);
+    line-height: 1.6;
+  }
+}

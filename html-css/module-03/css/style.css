@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  color: #626262;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*WRAPPER*/
+.container {
+  width: 901px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+/*SITE NAVIGATION*/
+.site-navigation {
+  display: inline-block;
+  vertical-align: middle;
+  width: 901px;
+  list-style: none;
+  margin: 0;
+  padding-top: 72px;
+  padding-bottom: 98px;
+  text-align: center;
+  line-height: 0;
+  padding-inline-start: 0px;
+}
+
+.site-navigation-items {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.site-navigation-items:not(:last-child) {
+  margin-right: 60px;
+}
+
+.site-navigation-links {
+  color: #626262;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 14px;
+  display: block;
+}
+
+.site-navigation-links:hover,
+.site-navigation-links:focus {
+  color: #03a9f4;
+}
+
+/*SECTIONS*/
+.page-news {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  padding-bottom: 52px;
+}
+
+.news-list-items {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 130px;
+  font-size: 14px;
+}
+
+.news-list-items:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.news-list-items:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+  padding-bottom: 52px;
+}
+
+.news-type {
+  font-family: "Ubuntu", "sans-serif";
+  text-transform: uppercase;
+  line-height: 17px;
+  color: #b4ad9e;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.news-name {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.news-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.load-button {
+  display: block;
+  border: 1px;
+  margin: 0 auto;
+  padding: 0;
+  width: 164px;
+  height: 60px;
+  background: #ffffff;
+  color: #626262;
+  line-height: 24px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: 1px solid rgb(98, 98, 98);
+}

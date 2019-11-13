@@ -1,0 +1,61 @@
+/* SOCIALS */
+
+.socnets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.socnets__item {
+  position: relative;
+}
+
+.socnets__icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  fill: #f38181;
+}
+
+.socnets__item:hover .socnets__icon {
+  fill: #fff;
+}
+
+.socnets__item:not(:last-child)::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  background-color: #f38181;
+  opacity: 0.5;
+  height: 100%;
+  width: 1px;
+}
+
+.socnets__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+}
+
+.socnets__link:hover {
+  background-color: #f38181;
+}

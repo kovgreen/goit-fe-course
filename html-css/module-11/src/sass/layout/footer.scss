@@ -1,0 +1,33 @@
+.footer {
+  @include center-flex('ver');
+  justify-content: space-between;
+  text-align: center;
+  height: 64px;
+  font-family: $font-text-main;
+  font-weight: 500;
+  color: map-get($colors, third-text-color);
+  border-top: 1px solid map-get($colors, primary-border-color);
+
+  &__info--red {
+    color: map-get($colors, primary-accent-color);
+  }
+
+  &__subscribe {
+    display: flex;
+    width: 380px;
+    height: 40px;
+  }
+
+  &__subscribe-mail {
+    border: 1px solid map-get($colors, primary-border-color);
+    width: 234px;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-family: $font-email;
+    background-color: map-get($colors, secondary-text-color);
+    color: map-get($colors, primary-ph-form-color);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+  }
+}

@@ -1,0 +1,21 @@
+%link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%button {
+  border: none;
+  font-size: 14px;
+  font-family: $font-title-sub;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: map-get($colors, secondary-text-color);
+  cursor: pointer;
+}

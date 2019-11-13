@@ -1,0 +1,12 @@
+.button-lean {
+  @extend %button;
+  padding: 10px 0;
+  width: 160px;
+  height: 40px;
+  background: transparent;
+  border: 3px solid map-get($colors, secondary-text-color);
+
+  &:hover {
+    background: map-get($colors, third-accent-color);
+  }
+}

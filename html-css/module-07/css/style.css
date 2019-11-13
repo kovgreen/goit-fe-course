@@ -1,0 +1,310 @@
+/* FONTS */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "MontserratR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "MontserratB";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-700.woff")
+      format("woff");
+}
+
+/* noto-serif-italic - latin (instead DroidSerif) */
+@font-face {
+  font-family: "NotoSerifR";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/noto-serif-v8-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/noto-serif-v8-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/noto-serif-v8-latin-italic.woff")
+      format("woff");
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "RobotoSlabR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+    /* IE6-IE8 */ url("../fonts/roboto-slab-v9-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-slab-v9-latin-regular.woff") format("woff");
+}
+
+/* DEFAULT SETTINGS*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* * {
+  outline: 0.0625rem solid red;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", "Arial", sans-serif;
+
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* STYLES FOR HEADER */
+
+.header {
+  padding: 2.8125rem 0;
+}
+
+.container {
+  width: 58.75rem;
+  margin: 0 auto;
+}
+
+.page-nav {
+  display: flex;
+  width: 58.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: block;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30.3125rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-link {
+  display: inline-block;
+  text-align: center;
+  font-family: "MontserratR", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-link:hover {
+  color: #fed136;
+}
+
+/* STYLES FOR SECTION SERVICES*/
+
+.services {
+  padding: 3.75rem 0 0rem;
+}
+
+.section-title-main {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: "MontserratB";
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.section-title-sub {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "NotoSerifR";
+  color: #808080;
+  text-transform: none;
+}
+
+.title-black {
+  color: #222222;
+}
+
+.list-services {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-bottom: 6.25rem;
+}
+
+.services-item {
+  text-align: center;
+  flex-basis: 17.5rem;
+}
+
+.services-item::before {
+  content: " ";
+  display: block;
+  width: 4.625rem;
+  height: 4.5625rem;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket::before {
+  background-image: url(../img/icon-basket.png);
+}
+
+.laptop::before {
+  background-image: url(../img/icon-laptop.png);
+}
+
+.locked::before {
+  background-image: url(../img/icon-locked.png);
+}
+
+.services-item-name {
+  padding: 1rem 0 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: "MontserratB", sans-serif;
+  letter-spacing: -0.8px;
+}
+
+.services-item-descriptions {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "RobotoSlabR", serif;
+  color: rgb(119, 119, 119);
+  text-align: center;
+  line-height: 22.4px;
+  letter-spacing: -0.8px;
+}
+
+/* STYLES FOR SECTION CONTACT*/
+
+.contact-form {
+  background-image: url(../img/image-map-wallpaper.png);
+  padding: 6.875rem 0 6.875rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-white {
+  color: #ffffff;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.contact-input-box {
+  width: 28.4375rem;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 0.875rem;
+}
+
+.contact-form-input:not(:last-child) {
+  margin-bottom: 1.75rem;
+}
+
+.contact-form-input:not(:last-child):valid,
+.contact-form-textarea:valid {
+  outline: 0.125rem solid green;
+}
+
+.contact-form-input:not(:last-child):invalid,
+.contact-form-textarea:invalid {
+  outline: 0.125rem solid red;
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+  font-size: 0.875rem;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "MontserratB";
+}
+
+.textarea-wrapper {
+  width: 28.4375rem;
+}
+
+.contact-form-textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 0.875rem;
+}
+
+.contact-form-button {
+  display: block;
+  width: 15rem;
+  height: 4.0625rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  background-color: #fed136;
+  font-weight: 700;
+  font-family: "MontserratB";
+}

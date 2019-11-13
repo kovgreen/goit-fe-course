@@ -1,0 +1,32 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+// UTILS
+@import './utilities/variables';
+@import './utilities/placeholders';
+@import './utilities/mixins';
+
+// BASE
+@import './base/normalize';
+@import './base/typography';
+@import './base/base.scss';
+
+// COMPONENTS
+@import './components/section';
+@import './components/button-lean';
+@import './components/button-subscribe';
+
+// PAGE LAYOUT
+@import './layout/header';
+@import './layout/site-header';
+@import './layout/container';
+@import './layout/page-nav';
+@import './layout/menu-site';
+@import './layout/site-nav';
+@import './layout/site-features';
+@import './layout/bunner';
+@import './layout/services';
+@import './layout/socnets';
+@import './layout/team';
+@import './layout/footer';

@@ -1,0 +1,63 @@
+BASIS
+container
+link
+list
+section
+    section__title
+        section__title--main
+        section__title--sub
+    section__description
+    section__list
+button
+
+
+
+HEADER
+    header
+    site-header
+    page-nav
+    site-logo
+        site-logo__img
+    menu-site    
+    site-nav
+        site-nav__item
+        site-nav__link
+    site-features
+        site-features__link
+        site-features__img
+    banner
+        banner__title
+        banner__slogan
+
+
+MAIN
+    services
+        services__item
+        services__item-box
+        services__item-icon
+        services__item-text
+            services__item-text--name
+            services__item-text--description
+
+    team
+        team__list
+        team__item
+        team__item-info
+        team__item-img
+        team__item-overlay
+        team__item-surname
+        team__item-position
+        socnets
+            socnets__item
+            socnets__link
+            socnets__icon
+FUTER
+    footer
+        footer__info
+            footer__info--red
+        footer__subscribe
+        footer__subscribe-mail
+        footer__subscribe-button
+
+
+

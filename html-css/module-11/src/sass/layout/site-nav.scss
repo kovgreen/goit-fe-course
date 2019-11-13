@@ -1,0 +1,41 @@
+.site-nav {
+  @extend %list;
+  width: 500px;
+  padding-right: 20px;
+
+  &__item {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+  }
+
+  &__link {
+    @extend %link;
+    text-align: center;
+    font-family: $font-text-third;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: map-get($colors, secondary-text-color);
+  }
+
+  &__link::after {
+    display: inline-block;
+    content: '';
+    width: 62px;
+    height: 3px;
+    background-color: map-get($colors, secondary-accent-color);
+    margin: 0 auto;
+    margin-top: 5px;
+    opacity: 0;
+  }
+
+  &__link:hover,
+  .site-nav__link:focus {
+    color: map-get($colors, secondary-accent-color);
+  }
+
+  &__link:hover::after {
+    opacity: 1;
+  }
+}

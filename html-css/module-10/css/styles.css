@@ -1,0 +1,9 @@
+@import url('../css/helpers/normalize.css');
+@import url('../css/helpers/fonts.css');
+@import url('../css/helpers/global.css');
+@import url('../css/helpers/media.css');
+@import url('../css/components/header.css');
+@import url('../css/components/section-services.css');
+@import url('../css/components/section-socnet.css');
+@import url('../css/components/section-team.css');
+@import url('../css/components/footer.css');

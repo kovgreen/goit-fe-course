@@ -1,0 +1,46 @@
+.socnets {
+  @include center-flex('hor');
+  @extend %list;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__item {
+    position: relative;
+  }
+
+  &__icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+    fill: map-get($colors, primary-accent-color);
+  }
+
+  &__item:hover .socnets__icon {
+    fill: map-get($colors, secondary-text-color);
+  }
+
+  &__item:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    background-color: map-get($colors, primary-accent-color);
+    opacity: 0.5;
+    height: 100%;
+    width: 1px;
+  }
+
+  &__link {
+    @include center-flex('all');
+    @extend %link;
+    width: 56px;
+    height: 56px;
+    background-color: map-get($colors, secondary-accent-color);
+  }
+
+  &__link:hover {
+    background-color: map-get($colors, primary-accent-color);
+  }
+}
